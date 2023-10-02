@@ -1,0 +1,10 @@
+<!-- templates/tourists_list.html -->
+{% extends "_base.html" %}
+{% block title %}Tourists{% endblock title %}
+{% block content %}
+{% for tourist in tourists %}
+<div>
+    <h2><a href="{{ tourist.get_absolute_url }}">{{ tourist.name }}</a></h2>
+</div>
+{% endfor %}
+{% endblock content %}

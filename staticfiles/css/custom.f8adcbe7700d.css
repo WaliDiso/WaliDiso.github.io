@@ -1,0 +1,18 @@
+/* Custom CSS to enable hover behavior */
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* static/css/styles.css */
+
+.custom-home-container {
+    background-image: url("../img/port.6630cc4c87f8.jpg");
+    /* Adjust the path as needed */
+    background-size: cover;
+    /* Ensures the image covers the entire background */
+
+    height: 100vh;
+    /* Set the height to 100% of the viewport height */
+    width: 100%;
+    /* Set the width to 100% of the viewport width */
+}

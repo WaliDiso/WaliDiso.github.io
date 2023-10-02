@@ -1,0 +1,19 @@
+<!-- templates/tourist_detail.html -->
+{% extends "_base.html" %}
+{% block title %}{{ tourist.name }}{% endblock title %}
+{% block content %}
+<div class="tourist-detail">
+    {% if tourists.cover %}
+    <img class="mycover" src="{{ tourists.cover.url}}" alt="{{ tourists.name }}">
+    {% endif %}
+    <h2><a href="">{{ tourists.name }}</a></h2>
+    <p>description: {{ tourists.email }}</p>
+    <p>Phone No: {{ tourists.phone_number }}</p>
+    <p>Origin: {{ tourists.origin}}</p>
+    <p>Destination: {{ tourists.destination}}</p>
+    <p>Departure Date: {{ tourists.departure_date }}</p>
+    <p>Message: {{ tourists.message }}</p>
+
+
+</div>
+{% endblock content %}

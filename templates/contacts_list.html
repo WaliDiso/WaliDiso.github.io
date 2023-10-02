@@ -1,0 +1,10 @@
+<!-- templates/contacts_list.html -->
+{% extends "_base.html" %}
+{% block title %}Contacts{% endblock title %}
+{% block content %}
+{% for contact in contacts %}
+<div>
+    <h2><a href="{% url 'contact_detail' contact.pk %}">{{ contact.name }}</a></h2>
+</div>
+{% endfor %}
+{% endblock content %}

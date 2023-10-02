@@ -1,0 +1,11 @@
+/* static/css/base.css */
+body {
+    min-height: 75rem;
+    padding-top: 3.5rem;
+}
+
+
+.sani {
+    height: 300px;
+    width: auto;
+}

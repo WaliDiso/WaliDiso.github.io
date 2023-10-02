@@ -1,0 +1,10 @@
+<!-- templates/agents/destination_list.html -->
+{% extends "_base.html" %}
+{% block title %}Destinations{% endblock title %}
+{% block content %}
+{% for destination in destination_list %}
+<div>
+    <h2><a href="{{ destination.get_absolute_url }}">{{ destination.location }}</a></h2>
+</div>
+{% endfor %}
+{% endblock content %}

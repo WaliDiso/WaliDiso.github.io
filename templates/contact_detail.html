@@ -1,0 +1,12 @@
+<!-- templates/contact_detail.html -->
+{% extends "_base.html" %}
+{% block title %}{{ contact.name }}{% endblock title %}
+{% block content %}
+<div class="contact_detail">
+
+    <h2><a href="">{{ contacts.name }}</a></h2>
+    <p>Email: {{ contacts.email }}</p>
+    <p>Message: {{ contacts.message }}</p>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,17 @@
+<!-- templates/index.html -->
+{% extends "_base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+<div class="container-fluid custom-home-container d-flex align-items-center justify-content-between">
+    <div class="row">
+        <div class="col-lg-10">
+
+            <h2 class="text-white fw-bold">Welcome to AAS Travel Agency</h2>
+
+            <p class="text-white fw-bold">We deliver an excellent travelling services <a href="{% url 'contactpage' %}"
+                    class="btn btn-success">Engage Us</a></p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
